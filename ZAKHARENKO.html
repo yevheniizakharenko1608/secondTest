@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+   <h2>Cycles TASK</h2>
+   <h3>Task 4</h3>
+   <script>
+      var i = 45, count = 670;
+
+      while (i <= count) {
+         if (i % 10 == 0) {
+            document.write(i);
+            document.write(" ")
+         }
+         i++;
+      };
+   </script>
+
+   <h2>Objets TASK</h2>
+
+   <script>
+      var obj = {
+         method1: function() {
+            document.write("метод1");
+            return this;
+         },
+         method2: function() {
+            document.write("метод2")
+         }
+      };
+      document.write('obj.method1(): ');
+      obj.method1();
+      document.write('<br/>obj.method2(): ');
+      obj.method2();
+      document.write('<br/>obj.method1().method2(): ');
+      obj.method1().method2()
+   </script>
+
+   <h2>Functions TASK</h2>
+
+   <script>
+
+      function rgb(x1, x2, x3) {
+
+         return ('rgb(' + x1 + ',' + x2 + ',' + x3 + ')')
+
+      };
+
+      document.write('invoke rgb function: ' + rgb(5, 60, 127))
+
+   </script>
+
+</body>
+</html>
